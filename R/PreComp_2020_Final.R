@@ -2,26 +2,28 @@
 #Initiate necessary R packages
 #install.packages("apLCMS")
 #library(apLCMS)
-#install.packages("rgl")
-#install.packages("poibin")
-#install.packages("ROCS") #Get from archive: https://cran.r-project.org/src/contrib/Archive/ROCS/
-#install.packages("remotes")
-#library(remotes)
+# install.packages("rgl")
+# install.packages("poibin")
+# install.packages("ROCS") #Get from archive: https://cran.r-project.org/src/contrib/Archive/ROCS/
+# install.packages("remotes")
+library(remotes)
 #remotes::install_github("yufree/apLCMS")
 library(rgl)
 library(apLCMS)
 
-#if (!require("BiocManager", quietly = TRUE))
-#  install.packages("BiocManager")
+if (!require("BiocManager", quietly = TRUE))
+  install.packages("BiocManager")
 
 #BiocManager::install("GO.db")
 library(GO.db)
-#BiocManager::install("sva")
-#BiocManager::install("limma")
-#BiocManager::install("xcms")
+# BiocManager::install("sva")
+# library(sva)
+# BiocManager::install("limma")
+# library(limma)
+# BiocManager::install("xcms")
 library(xcms)
 
-#remotes::install_github("yufree/xMSanalyzer")
+remotes::install_github("yufree/xMSanalyzer")
 library(xMSanalyzer)
 
 library(dplyr)
